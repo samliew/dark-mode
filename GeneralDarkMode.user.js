@@ -3,7 +3,7 @@
 // @description  A general dark theme for all websites
 // @homepage     https://github.com/samliew/GeneralDarkMode
 // @author       @samliew
-// @version      0.1.2
+// @version      0.1.3
 //
 // @include      *
 //
@@ -78,14 +78,14 @@ input[type="submit"]:hover,
 
 
 /* Try to override classes that uses !important */
-*[class*="open"],
-*[class*="close"],
-*[class*="act"],
-*[class*="sel"],
-*[class*="curr"],
-*[class*="white"],
-*[class*="gray"],
-*[class*="black"] {
+body *[class*="open"],
+body *[class*="close"],
+body *[class*="act"],
+body *[class*="sel"],
+body *[class*="curr"],
+body *[class*="white"],
+body *[class*="gray"],
+body *[class*="black"] {
     background-color: ${bgColor};
     color: ${textColor};
 }
@@ -104,19 +104,19 @@ input[type="submit"]:hover,
 
 
 /* Specific elements opacity & hover */
-footer > *,
-*[id*="sidebar"] > *,
-*[id*="footer"] > *
-*[class*="sidebar"] > *,
-*[class*="footer"] > * {
+body footer > *,
+body *[id*="sidebar"] > *,
+body *[id*="footer"] > *
+body *[class*="sidebar"] > *,
+body *[class*="footer"] > * {
     opacity: 0.6;
     transition: opacity 0.2s ease;
 }
-footer:hover > *,
-*[id*="sidebar"]:hover > *,
-*[id*="footer"]:hover > *
-*[class*="sidebar"]:hover > *,
-*[class*="footer"]:hover > * {
+body footer:hover > *,
+body *[id*="sidebar"]:hover > *,
+body *[id*="footer"]:hover > *
+body *[class*="sidebar"]:hover > *,
+body *[class*="footer"]:hover > * {
     opacity: 1;
 }
 
