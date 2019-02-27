@@ -3,7 +3,7 @@
 // @description  A general dark theme for all websites
 // @homepage     https://github.com/samliew/GeneralDarkMode
 // @author       @samliew
-// @version      0.1
+// @version      0.1.1
 //
 // @include      *
 //
@@ -71,6 +71,20 @@ input[type="submit"]:hover,
 }
 
 
+/* Try to override classes that uses !important */
+*[class*="open"],
+*[class*="close"],
+*[class*="act"],
+*[class*="sel"],
+*[class*="curr"],
+*[class*="white"],
+*[class*="gray"],
+*[class*="black"] {
+    background-color: ${bgColor};
+    color: ${textColor};
+}
+
+
 /* Selection */
 ::selection { background: ${textSelectionBgColor}; }
 ::-moz-selection { background: ${textSelectionBgColor}; }
@@ -84,13 +98,19 @@ input[type="submit"]:hover,
 
 
 /* Specific elements opacity & hover */
+footer > *,
 *[id*="sidebar"] > *,
-*[id*="footer"] > * {
+*[id*="footer"] > *
+*[class*="sidebar"] > *,
+*[class*="footer"] > * {
     opacity: 0.6;
     transition: opacity 0.2s ease;
 }
+footer:hover > *,
 *[id*="sidebar"]:hover > *,
-*[id*="footer"]:hover > * {
+*[id*="footer"]:hover > *
+*[class*="sidebar"]:hover > *,
+*[class*="footer"]:hover > * {
     opacity: 1;
 }
 
