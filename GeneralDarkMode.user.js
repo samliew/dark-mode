@@ -3,7 +3,7 @@
 // @description  A general dark theme for all websites
 // @homepage     https://github.com/samliew/GeneralDarkMode
 // @author       @samliew
-// @version      0.1.1
+// @version      0.1.2
 //
 // @include      *
 //
@@ -36,14 +36,20 @@ body {
 *,
 *:before,
 *:after {
-    background-image: none;
     background-color: ${bgColor};
     color: ${textColor};
     box-shadow: none;
     outline: none;
     text-shadow: none;
 }
+.btn,
+.button,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
 *:not(span) {
+    background-image: none;
     border-color: ${borderColor};
 }
 a:hover {
