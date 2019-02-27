@@ -48,7 +48,7 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
-*:not(span) {
+*:not(a):not(span) {
     background-image: none;
     border-color: ${borderColor};
 }
@@ -74,6 +74,13 @@ input[type="submit"]:hover,
 .button:hover {
     background-color: ${btnColor};
     color: white;
+}
+
+
+/* Don't apply background to these elements */
+video ~ *,
+video ~ * * {
+    background-color: transparent;
 }
 
 
