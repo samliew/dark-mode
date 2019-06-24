@@ -3,9 +3,11 @@
 // @description  A general dark theme for all websites
 // @homepage     https://github.com/samliew/GeneralDarkMode
 // @author       @samliew
-// @version      0.2
+// @version      0.2.1
 //
 // @include      *
+//
+// @exclude      https://*reddit.com/*
 //
 // @exclude      https://*stackexchange.com/*
 // @exclude      https://*stackoverflow.com/*
