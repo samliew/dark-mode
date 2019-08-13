@@ -3,7 +3,7 @@
 // @description  A general dark theme for all websites
 // @homepage     https://github.com/samliew/GeneralDarkMode
 // @author       @samliew
-// @version      0.2.1
+// @version      0.2.2
 //
 // @include      *
 //
@@ -53,7 +53,7 @@ body > * {
     background-image: none;
     background-color: ${bgColor};
 }
-*,
+*:not(video):not(iframe):not(embed),
 *:before,
 *:after {
     background-color: ${bgColor};
@@ -218,6 +218,12 @@ ytd-thumbnail *,
 }
 .ytd-app {
     background-color: ${bgColor};
+}
+.ytp-miniplayer-scrim,
+.ytp-miniplayer-ui,
+.ytp-miniplayer-controls,
+.ytp-miniplayer-controls * {
+    background: none;
 }
 
 
